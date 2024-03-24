@@ -1,0 +1,153 @@
+<!DOCTYPE html>  
+<html>  
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: rgb(11, 181, 219);  
+}  
+.container {  
+    padding: 50px;  
+  background-color: rgb(248, 172, 9);  
+}    
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #00faf2;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+} 
+.form{
+    width:50%;
+    height:50%;
+    margin:0 auto;
+} 
+header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #333;
+    color: rgb(248, 171, 5);
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+</style>  
+</head>  
+<body> <header>
+    <img src="college-logo.png.jpg" alt="College Logo">
+    <h1>Welcome to Saraswati Gyan Mandir</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="ps_v.html">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="registeration.html">Registeration Form</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+
+    </ul>
+</nav> 
+    <div class="form">
+<form> 
+  <div class="container">  
+  <center>  <h1> Student Registeration Form</h1> </center>  
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> Middlename: </label>   
+<input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+<div>  
+<label>   
+Course :  
+</label>   
+  
+<select>  
+<option value="Course">Course</option>  
+<option value="Electronics and Computer Science">E&CS</option>  
+<option value="COMPUTER SCIENCE">COMP</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">MBA</option>  
+<option value="MCA">MCA</option>  
+<option value="M.Tech">M.Tech</option>  
+</select>  
+</div> 
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+<label>   
+Phone :  
+</label>  
+<span>"+91"</span><input type="text" name="Phone" maxlength="10"/>  
+Current Address :  
+<textarea cols="80" rows="5" placeholder="Current Address" name="address" required>  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    <label for="password"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="password" required>  
+  
+    <label for="password-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="password-repeat" required>  
+    <button type="submit" class="registerbtn">Register</button>    
+</form>  </div>
+</body>  
+</html>  
